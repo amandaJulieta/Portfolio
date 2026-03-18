@@ -6,6 +6,17 @@
 	<!--Include Bootstrap Framework CSS (Styles) -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 	<title></title>
+  <style>
+    .carousel-custom{
+    width:800px;
+    margin:auto;
+}
+
+.carousel-img{
+    height:400px;
+    object-fit:cover;
+}
+  </style>
 </head>
 <body>
 	<!-- Navbar Bootstrap Framework -->
@@ -39,6 +50,32 @@
     </div>
   </div>
 </nav>
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade carousel-custom" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="images/lgbt.jpg" class="d-block w-100 carousel-img" alt="lgbt">
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/ubuntu.png" class="d-block w-100 carousel-img" alt="ubuntu">
+    </div>
+<!--
+    <div class="carousel-item">
+      <img src="images/imagen3.jpg" class="d-block w-100 carousel-img" alt="img">
+    </div>
+-->
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
 
 </body>
 <!--Include Bootstrap Framework JS -->

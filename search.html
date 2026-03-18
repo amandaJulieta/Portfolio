@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css">
+
+<title>Resultados de Búsqueda</title>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<div class="container-fluid">
+
+<a class="navbar-brand" href="#">Pablo Garcia</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Inicio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="projects.html">Proyectos</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">Sobre Mi</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="technologies.html">Tecnologías</a>
+</li>
+
+</ul>
+
+<form action="search.html" class="d-flex">
+<input class="form-control me-2" type="text" name="q" placeholder="Buscar...">
+<button class="btn btn-outline-success">Buscar</button>
+</form>
+
+</div>
+</div>
+</nav>
+
+<div class="container mt-4">
+
+<h2>Resultados</h2>
+
+<hr>
+
+<table id="searchTable" class="table table-striped">
+
+<thead>
+<tr>
+<th>Página</th>
+<th>URL</th>
+<th>Palabras clave</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Inicio</td>
+<td><a href="index.html">index.html</a></td>
+<td>portfolio inicio pablo garcia</td>
+</tr>
+
+<tr>
+<td>Proyectos</td>
+<td><a href="projects.html">projects.html</a></td>
+<td>proyectos javascript php web apps</td>
+</tr>
+
+<tr>
+<td>Sobre Mi</td>
+<td><a href="about.html">about.html</a></td>
+<td>experiencia desarrollador</td>
+</tr>
+
+<tr>
+<td>Tecnologías</td>
+<td><a href="technologies.html">technologies.html</a></td>
+<td>html css javascript bootstrap php</td>
+</tr>
+
+<tr>
+<td>Centro de Capacitación y Formación UBUNTU</td>
+<td><a href="detail/centroUbuntu/index.html">Centro de Formación y Capacitación Ubuntu</a></td>
+<td>html css javascript bootstrap php mysql</td>
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.13.8/js/dataTables.bootstrap5.min.js"></script>
+
+<script>
+
+function getParameter(name){
+const params = new URLSearchParams(window.location.search);
+return params.get(name);
+}
+
+const table = new DataTable('#searchTable');
+
+const q = getParameter("q");
+
+if(q){
+table.search(q).draw();
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "pages":[
+    {
+      "title":"Inicio",
+      "url":"index.html",
+      "keywords":"portfolio pablo garcia desarrollador web"
+    },
+    {
+      "title":"Proyectos",
+      "url":"projects.html",
+      "keywords":"proyectos javascript php web apps"
+    },
+    {
+      "title":"Sobre Mi",
+      "url":"about.html",
+      "keywords":"pablo garcia experiencia desarrollador"
+    },
+    {
+      "title":"Tecnologías",
+      "url":"technologies.html",
+      "keywords":"html css javascript bootstrap php"
+    },
+    {
+    	"title":"Ubuntu",
+    	"url":"detail/centroUbuntu.html",
+    	"keywords":"html javascript bootstrap php mysql"
+    }
+  ]
+}

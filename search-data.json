@@ -24,7 +24,13 @@
     	"title":"Ubuntu",
     	"url":"detail/centroUbuntu.html",
     	"keywords":"html javascript bootstrap php mysql"
-    }
+    },
+    {
+      "title":"Portafolio",
+      "url":"https://pablo-garcia.netlify.app/",
+      "keywords":"html javascript bootstrap"
+    },
+
     
   ]
 }
